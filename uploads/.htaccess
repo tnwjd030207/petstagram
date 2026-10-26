@@ -1,0 +1,6 @@
+# 업로드된 파일이 스크립트로 실행되는 것을 방지합니다.
+<FilesMatch "\.(php|php5|phtml|pl|py|cgi)$">
+    Require all denied
+</FilesMatch>
+Options -ExecCGI
+php_flag engine off

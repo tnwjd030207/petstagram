@@ -1,0 +1,5 @@
+# 게시물 업로드(최대 3장, 장당 20MB, upload.php의 MAX_UPLOAD_BYTES와 일치)가
+# PHP 기본 업로드 제한(2MB)에 막히지 않도록 상향 조정합니다.
+# 참고: mod_php가 아닌 PHP-FPM/CGI 환경에서는 이 값이 적용되지 않으므로 .user.ini도 함께 둡니다.
+php_value upload_max_filesize 25M
+php_value post_max_size 70M

@@ -1,0 +1,5 @@
+config/database.php
+uploads/avatars/*
+uploads/posts/*
+!uploads/avatars/.gitkeep
+!uploads/posts/.gitkeep
